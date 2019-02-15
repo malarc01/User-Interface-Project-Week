@@ -1,0 +1,91 @@
+// Home Content
+.home{
+
+  h2{
+    padding-top: 38px;
+    padding-bottom: 15px;
+  }
+
+  .button{
+    margin-top: 40px;
+    font-size: 16px;
+    display: inline-flex;
+    border: 1px solid #222222;
+    padding: 15px 21px;
+    @media @phone{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .projects{
+    border: 1.5px solid pink;
+    padding: 1px 203px;
+    @media @phone{
+      padding: 1px 1px;
+      margin: 0 15px;
+    }
+    padding-bottom: 50px;
+  }
+  h3{
+    .os{
+      // border: 4px solid green;
+    }
+  }
+  .os{
+    border: 4px solid green;
+
+  }
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2%;
+  .rp-img{
+    @media @phone{
+      max-width: 500px;
+    }
+  }
+    .sja{
+      display: flex;
+      @media @phone{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+        .text-content-sja{
+          width: 50%;
+          @media @phone{
+            width: 100%;
+          }
+        }
+        .img-content-sja{
+          width: 50%;
+          padding-left: 30px;
+          @media @phone{
+            width: 100%;
+          }
+        }
+    }
+    .fd{
+      display: flex;
+      margin-top: 100px;
+      @media @phone{
+        display: flex;
+        flex-direction: column;
+      }
+      // flex-direction: row-reverse;
+        .text-content-fd{
+          width:50%;
+          @media @phone{
+            width: 100%;
+          }
+        }
+    }   .img-content-fd{
+        // width: 50%;
+        // padding-right: 30px;
+        @media @phone{
+          width: 100%;
+          }
+        // border: 3px solid orange;
+        }
+
+}
