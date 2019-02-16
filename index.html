@@ -14,7 +14,23 @@
 
 <div class = "header-container">
 	<div class="logo">S&J</div>
-	<a href="./services.html"><img class="menu-button" src="./img/nav-hamburger.png" alt="nav-icon"></a>
+	<!-- The overlay -->
+	<div id="myNav" class="overlay">
+
+	<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<a href="./index.html">Home</a>
+			<a href="./services.html">Services</a>
+			<a href="./contact.html">Contact</a>
+
+		</div>
+
+	</div>
+	<span onclick="openNav()"><img class="menu-button"src="./img/nav-hamburger.png" alt="open"></span>
+	<!-- <a href="./services.html"><img class="menu-button" src="./img/nav-hamburger.png" alt="nav-icon"></a> -->
 </div>
 
 <section class="jumbo">
@@ -117,7 +133,7 @@
 	</picture>
 
 	<!-- <img class="rp-img" src="./img/home/home-the-blocks-img.png" alt="blocks building"> -->
-	<h3>THE BLOCKS</h3>
+	<h3 class="blocks">THE BLOCKS</h3>
 	<div class="projects">
 		<p>The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
 
@@ -177,5 +193,6 @@ Copyright © 2018 Smith and Jones
 </small>
 
 	<script src="js/index.js"></script>
+	<script src='js/overlay.js'></script>
 </body>
 </html>

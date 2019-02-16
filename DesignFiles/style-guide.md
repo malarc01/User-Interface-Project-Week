@@ -4,8 +4,8 @@ Use this guide to help you navigate the design files.  In a professional work pl
 Font family can be found here: https://fonts.google.com/specimen/Roboto
 
 ### GENERAL STYLES
-- Background: #FFFFFF
-- Color: #222222
+- Background: #FFFFFF AKA white
+- Color: #222222 BLACK
 - Font Family: Roboto, Arial, sans-serif
 
 ### General Text
@@ -16,7 +16,7 @@ Font family can be found here: https://fonts.google.com/specimen/Roboto
 ### Navigation Logo
 - Font Weight: Bold
 - Font Size: 24px
-- Color: #FFFFFF
+- Color: #FFFFFF AKA white
 
 
 
