@@ -1,5 +1,12 @@
 // Home Content
 .home{
+  max-width: 868px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2%;
+  @media @phone{
+    padding: 0 15px;
+  }
   .blocks{
     left: 663px;
   }
@@ -41,10 +48,7 @@
   .vs{
     left:675px;
   }
-  max-width: 868px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 2%;
+
   .rp-img{
     @media @phone{
       max-width: 500px;
@@ -77,19 +81,25 @@
       @media @phone{
         display: flex;
         flex-direction: column;
+        margin-top: 46px;
       }
       // flex-direction: row-reverse;
         .text-content-fd{
           width:50%;
-          padding-left: 30px;
+          padding-left: 56px;
           @media @phone{
+
             width: 100%;
+            padding-left: 0px;
           }
         }
     }   .img-content-fd{
         // width: 50%;
         // padding-right: 30px;
         @media @phone{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
           width: 100%;
           }
         // border: 3px solid orange;
