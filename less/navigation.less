@@ -7,8 +7,8 @@ body {
     z-index: 8;
     left: 0;
     top: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #5E9FB9;
+    background-color: rgba(155, 165, 175, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -23,12 +23,13 @@ body {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: orange;
+    color: white;
     display: block;
+    font-weight: bold;
     transition: 0.3s;
   }
   .overlay a:hover, .overlay a:focus{
-    color: green;
+    color: #222222;
   }
   .overlay .closebtn{
     position: absolute;
@@ -47,7 +48,7 @@ body {
   .header-container {
     display: flex;
     // justify-content: space-between;
-    background-color: teal;
+    background-color: #828282;
     color: white;
 
     width: 100%;
@@ -72,6 +73,9 @@ body {
       position: absolute;
       margin: 0;
       left: 80px;
+      @media @phone{
+        left:30px;
+      }
       // font-size: 48px;
 
     }
@@ -126,6 +130,19 @@ body {
     background-size: cover;
     position: relative;
   }
+  .hero-image-service {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url(../img/services/services-jumbotron.png);
+
+    /* Set a specific height */
+    height: 200px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
   /* Place text in the middle of the image */
   .hero-text {
@@ -133,23 +150,29 @@ body {
     position: relative;
     top: 60%;
     @media @phone{
-      position: absolute;
+      position: relative;
+      padding-top: 98px;
       top: -11%;
     }
     // left: 50%;
     // transform: translate(-50%, -50%);
     // color: white;
   }
+
   .mobile-villa,.mobile-outskirt,.mobile-block{
     @media @phone{
       width: 385px;
     }
   }
   .projects{
+    padding: 0px 217px;
+    padding-bottom: 98px;
+
+
     @media @phone{
       padding: 0 15px;
       padding-top: 1px;
-      padding-bottom: 1px;
+      padding-bottom: 48px;
     }
 
   }
@@ -176,8 +199,8 @@ body {
   h3{
     position: relative;
     background-color: #D8D8D8;
-    padding: 20px;
-    border: 1px solid red;
+    padding: 34px 56px;
+    // border: 1px solid red;
     bottom: 48px;
     display: inline-flex;
     @media @phone{
@@ -185,9 +208,10 @@ body {
     position: relative;
     background-color: #D8D8D8;
     padding: 37px 93px;
-    border: 1px solid orange;
+    // border: 1px solid orange;
     bottom: 18px;
     display: inline-flex;
+    // letter-spacing: 2px;
     }
 
 
