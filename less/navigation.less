@@ -1,0 +1,241 @@
+// Navigation code here
+body {
+  .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    background-color: #5E9FB9;
+    background-color: rgba(155, 165, 175, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .overlay a:hover, .overlay a:focus{
+    color: #222222;
+  }
+  .overlay .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  @media screen and (max-height: 450px){
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top:15px;
+      right: 35px;
+    }
+  }
+  .header-container {
+    display: flex;
+    // justify-content: space-between;
+    background-color: #828282;
+    color: white;
+
+    width: 100%;
+    height: 50px;
+    // background-color: #388E3C;
+    // color: white;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+
+
+
+    // .spacewalker-mix;
+    // font-size: 4rem;
+    // display: flex;
+    // justify-content: center;
+    .logo{
+      position: absolute;
+      margin: 0;
+      left: 80px;
+      @media @phone{
+        left:30px;
+      }
+      // font-size: 48px;
+
+    }
+    .menu-button{
+      position: absolute;
+      right: 80px;
+      top: 15px;
+      cursor: pointer;
+    }
+
+  }
+
+  .jumbo{
+    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url(../img/home/home-jumbotron.png) no-repeat ;
+    background-size: cover;
+    height:734px;
+    @media @phone{
+      background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url(../img/home/home-mobile-jumbotron.png) no-repeat;
+      height:333px;
+      background-size: cover;
+    }
+    .hero-text h1{
+      // padding-bottom: 15px;
+      padding-left: 30px;
+      // padding-top: 147px;
+    }
+  }
+  .service-jumbo{
+    // background: url(../img/services/services-jumbotron.png) no-repeat fixed;
+    @media @phone{
+      background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url(../img/services/services-mobile-jumbotron.png) no-repeat fixed;
+      height:50vh;
+      background-size: cover;
+    }
+    background-size: cover;
+    height:200px;
+
+
+  }
+
+
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/home-jumbotron.png);
+
+    /* Set a specific height */
+    height: 200px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-image-service {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url(../img/services/services-jumbotron.png);
+
+    /* Set a specific height */
+    height: 200px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* Place text in the middle of the image */
+  .hero-text {
+    // text-align: center;
+    position: relative;
+    top: 60%;
+    @media @phone{
+      position: relative;
+      padding-top: 98px;
+      top: -11%;
+    }
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // color: white;
+  }
+
+  .mobile-villa,.mobile-outskirt,.mobile-block{
+    @media @phone{
+      width: 385px;
+    }
+  }
+  .projects{
+    padding: 0px 217px;
+    padding-bottom: 98px;
+
+
+    @media @phone{
+      padding: 0 15px;
+      padding-top: 1px;
+      padding-bottom: 48px;
+    }
+
+  }
+
+  h1{
+    // position: relative;
+    // top: 465px;
+    // left: 80px;
+    // bottom: 46px;
+    font-weight: bold;
+    font-size: 64px;
+    @media @phone{
+      font-size: 47px;
+    }
+    line-height: 75px;
+    // color: #FFFFFF;
+  }
+  h2{
+    font-weight: bold;
+    font-size: 28px;
+    color: #222222;
+    padding-top: 7%;
+  }
+  h3{
+    position: relative;
+    background-color: #D8D8D8;
+    padding: 34px 56px;
+    // border: 1px solid red;
+    bottom: 48px;
+    display: inline-flex;
+    @media @phone{
+    left: 24px;
+    position: relative;
+    background-color: #D8D8D8;
+    padding: 37px 93px;
+    // border: 1px solid orange;
+    bottom: 18px;
+    display: inline-flex;
+    // letter-spacing: 2px;
+    }
+
+
+  }
+
+
+  .logo{
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+
+
+  nav {
+    // .center-mix;
+    // display: flex;
+    // justify-content: center;
+    // align-items: baseline;
+    // padding: 15px;
+    // border-bottom: 1px solid grey;
+    a {
+      // font-size: 1.5rem;
+      // text-decoration: none;
+      // padding: 8px;
+    }
+  }
+}
